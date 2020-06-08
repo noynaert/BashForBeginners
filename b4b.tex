@@ -19,13 +19,14 @@
 %	DOCUMENT CONFIGURATIONS AND INFORMATION
 %----------------------------------------------------------------------------------------
 
-\documentclass[oneside,11pt]{memoir} % Font size
+%\documentclass[oneside,11pt,letterpaper]{memoir} % Font size
+\documentclass[oneside,13pt,letterpaper]{memoir} % Font size
 
 \input{structure.tex} % Include the file that specifies the document structure and layout
 
-\title{Grimms' Fairy Tales} % Book title
-\author{The Brothers Grimm} % Author
-\newcommand{\edition}{Second Edition} % Book edition
+\title{Bash for Beginners} % Book title
+\author{J. Evan Noynaert} % Author
+\newcommand{\edition}{2020-06-15 Edition} % Book edition
 
 %----------------------------------------------------------------------------------------
 
@@ -39,9 +40,9 @@
 \ThisCenterWallPaper{1.12}{cover.png} % Add the background image, the first argument is the scaling - adjust this as necessary so the image fits the entire page
 
 \begin{tikzpicture}[remember picture,overlay]
-\node [rectangle, rounded corners, fill=white, opacity=0.75, anchor=south west, minimum width=3cm, minimum height=6cm] (box) at (-0.5,-10) (box){}; % White rectangle - "minimum width/height" adjust the width and height of the box; "(-0.5,-10)" adjusts the position on the page
+\node [rectangle, rounded corners, fill=green, opacity=0.75, anchor=south west, minimum width=8cm, minimum height=6cm] (box) at (-0.5,-10) (box){}; % White rectangle - "minimum width/height" adjust the width and height of the box; "(-0.5,-10)" adjusts the position on the page
 \node[anchor=west, color01, xshift=-1.5cm, yshift=-0.4cm, text width=2.9cm, font=\sffamily\scriptsize] at (box.north){\edition}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
-\node[anchor=west, color01, xshift=-1.5cm, yshift=-2cm, text width=2.9cm, font=\sffamily\bfseries\scshape\Large] at (box.north){\thetitle}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
+\node[anchor=west, color01, xshift=-1.5cm, yshift=-2cm, text width=7.0cm, font=\sffamily\bfseries\scshape\Large] at (box.north){\thetitle}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
 \node[anchor=west, color01, xshift=-1.5cm, yshift=-5cm, text width=2.9cm, font=\sffamily\bfseries] at (box.north){\theauthor}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
 \end{tikzpicture}
 
@@ -89,13 +90,15 @@ The grandmother lived out in the wood, half a league from the village, and just 
 `Good day, Little Red-Cap,' said he.
 
 `Thank you kindly, wolf.'
+\section{Section 1}
 
 `Whither away so early, Little Red-Cap?'
 
 `To my grandmother's.'
 
 `What have you got in your apron?'
-
+\section{Sec 2}
+\subsection{Sub nautilus}
 `Cake and wine; yesterday was baking-day, so poor sick grandmother is to have something good, to make her stronger.'
 
 `Where does your grandmother live, Little Red-Cap?'
